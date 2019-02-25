@@ -1,0 +1,70 @@
+Bash & Scripting
+================
+
+* "echo ~" - command that prints out your home directory. ( ~ - shortcut of home directory)
+
+* "touch <filename>" - command that creates <filename> file.
+
+* "ls <dir>" - shows content of dir
+
+* "ls <filename>" - shows the file
+
+* "ls -l" - command which prints out all files and their permissions.
+
+* "ls -la" - shows also hiden files.
+
+* "ls -ltr" - long list, sort by modification time, newest first.
+
+* "ls -ltrh" - print sized in human readable format
+
+* "pwd" - current working dir
+
+* "mkdir" - creates dir
+
+* "mkdir -p ./<...>/<...>/<filename>" - creates the whole path
+
+* "cp"
+
+* "rm"
+
+* "cat"
+
+* "more"
+
+* "less"
+
+* "find" - finds provided file
+
+
+--------------------------
+
+Files and permissions
+======================
+
+Every file in file system has permissions.
+Permission template structure:
+
+permission              action on file            			action on directory
+==========				==============						==================
+* r(read)       		read file content(cat)            	read directory (ls)
+* w(write)				change file content(vi)				create files in(touch)
+* x(execute)			execute a file 						enter the directory(cd)
+
+* "chmod u+x <filename>"  - change permission such that user can execute
+* "chown user:group file" - set ownership
+
+xxx - bitwise word that decides the permission of the file (111 = 7    - provides r,w,x permission)
+
+
+File types (represented under file permission structure):
+* - 	- simple file
+* b  	- block (hard drive)
+* c 	- character device
+* s 	- socket
+* p 	- named pipe
+* l 	- symbolic link
+* d 	- directory
+
+--------------------------
+
+
